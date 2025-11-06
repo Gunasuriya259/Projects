@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>To Kill a Mockingbird</h2>
+            <h5>Harper Lee</h5>
+            <p>To Kill a Mockingbird is a classic American novel set in the 1930s in the racially segregated Southern United States. It follows young Scout Finch as she observes her father, Atticus Finch, defend a Black man wrongly accused of a crime. The novel explores themes of justice, racism, moral growth, and compassion.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <div class="popup-overlay"></div>
+
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">Add</button>
+            <button class="cancel-popup">Cancel</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
